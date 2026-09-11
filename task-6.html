@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Defines the character encoding -->
+    <meta charset="UTF-8">
+    <!-- Makes the webpage responsive on different devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title shown on the browser tab -->
+    <title>Digital Clock</title>
+    <!-- Connects the HTML file with the CSS file -->
+    <link rel="stylesheet" href="task-6.css">
+</head>
+<body>
+    <!-- DIGITAL CLOCK SECTION -->
+    <main class="clock-container">
+        <!-- Heading -->
+        <h1>Digital Clock</h1>
+        <!-- Short description -->
+        <p class="description">
+            Current Time
+        </p>
+        <!-- CLOCK DISPLAY -->
+        <!-- JavaScript will update the time inside this element.        -->
+        <div
+            id="clock"
+            class="clock"
+            role="timer"
+            aria-live="polite">
+            00:00:00
+        </div>
+        <!-- AM / PM display -->
+        <div id="period" class="period">
+            AM
+        </div>
+        <!-- DATE DISPLAY -->
+        <!-- JavaScript will display the current date here -->
+        <div id="date" class="date">
+            Date
+        </div>
+    </main>
+    <!-- Connects the JavaScript file -->
+    <script src="task-6.js"></script>
+</body>
+</html>

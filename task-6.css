@@ -1,0 +1,113 @@
+/* BASIC RESET
+   Removes default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* BODY */
+body {
+    /* Font used on the webpage */
+    font-family: Arial, sans-serif;
+    /* Dark background */
+    background-color: #111827;
+    /* Text color */
+    color: white;
+    /* Takes the full height of the screen */
+    min-height: 100vh;
+    /* Centers the clock horizontally and vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Space around the content */
+    padding: 20px;
+}
+/* CLOCK CONTAINER */
+.clock-container {
+    /* White/dark card background */
+    background-color: #1f2937;
+    /* Limits the width of the card */
+    width: 100%;
+    max-width: 600px;
+    /* Space inside the card */
+    padding: 50px 30px;
+    /* Rounded corners */
+    border-radius: 15px;
+    /* Centers text */
+    text-align: center;
+    /* Adds shadow around the card */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+/* MAIN HEADING */
+.clock-container h1 {
+    /* Heading size */
+    font-size: 32px;
+    /* Heading color */
+    color: #ffffff;
+    /* Space below heading */
+    margin-bottom: 10px;
+}
+/* DESCRIPTION */
+.description {
+    /* Gray description text */
+    color: #9ca3af;
+    /* Space below description */
+    margin-bottom: 25px;
+}
+/* DIGITAL CLOCK */
+.clock {
+    /* Large clock numbers */
+    font-size: 70px;
+    /* Makes the numbers bold */
+    font-weight: bold;
+    /* Letter spacing */
+    letter-spacing: 4px;
+    /* Clock text color */
+    color: #60a5fa;
+    /* Prevents the clock from changing width
+       when the numbers change */
+    font-variant-numeric: tabular-nums;
+}
+/*   AM / PM */
+.period {
+    /* AM/PM size */
+    font-size: 22px;
+    /* White text */
+    color: white;
+    /* Space below AM/PM */
+    margin-top: 5px;
+}
+/* DATE */
+.date {
+    /* Space above date */
+    margin-top: 25px;
+    /* Date color */
+    color: #d1d5db;
+    /* Date size */
+    font-size: 17px;
+}
+/* RESPONSIVE DESIGN */
+/* Changes the clock size on smaller screens. */
+@media (max-width: 600px) {
+    /* Reduce card padding */
+    .clock-container {
+        padding: 40px 20px;
+    }
+    /* Make heading smaller */
+    .clock-container h1 {
+        font-size: 27px;
+    }
+    /* Make clock smaller on mobile */
+    .clock {
+        font-size: 42px;
+        letter-spacing: 2px;
+    }
+    /* Smaller AM/PM */
+    .period {
+        font-size: 18px;
+    }
+    /* Smaller date */
+    .date {
+        font-size: 15px;
+    }
+}
